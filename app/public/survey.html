@@ -240,7 +240,7 @@
             };
             $.ajax({
                 method: "POST",
-                url: "/api/comparefriends",
+                url: "/api/compareFriends",
                 data: newFriend,
                 success: (data) => {
                     $("#friendFace").attr('src', data.photo);
