@@ -216,8 +216,7 @@
         function validateForms() {
             var validData = true;
             $('select').each(function () {
-                if (Number.isNaN($(this).val())) validData = false;
-
+                if ($(this).val() == null) validData = false;
             });
             $('input[type=text]').each(function () {
                 if ($(this).val() === '') validData = false;
